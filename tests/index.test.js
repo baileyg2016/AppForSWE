@@ -1,6 +1,9 @@
 
 const feed = require('../js/feed.js')
 
+var a1 = true;
+
 it('feed test', () => {
-    feed.like("<i />");
+    feed.like(a1);
+    expect(like(a1).toBe(true));
 })
