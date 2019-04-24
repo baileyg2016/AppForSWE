@@ -1,7 +1,7 @@
 
 const feed = require('../js/feed.js')
 
-var a1 = true;
+var a1 = "fa-thumbs-down";
 
 it('feed test', () => {
     feed.like(a1);
