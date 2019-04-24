@@ -1,0 +1,22 @@
+{
+  "name": "appforswe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/baileyg2016/AppForSWE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/baileyg2016/AppForSWE/issues"
+  },
+  "homepage": "https://github.com/baileyg2016/AppForSWE#readme",
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}
