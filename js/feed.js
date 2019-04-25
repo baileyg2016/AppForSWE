@@ -11,13 +11,16 @@ function like(x) {
   return 5;
 }
 
-exports.like = like;
+module.exports = {like: like};
 
-
+//lets user set a picture
 function setPic(pic)
 {
   var image = pic;
-  // document.getElementById("profilePic").innerHTML = "";
+  if(image == null)
+  {
+    return 1;
+  }
   return 2;
 }
 module.exports = {setPic: setPic};
