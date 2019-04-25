@@ -23,4 +23,32 @@ function setPic(pic)
   }
   return 2;
 }
-module.exports = {setPic: setPic};
+//module.exports = {setPic: setPic};
+
+
+/*
+sets the biography of a user
+@returns 2 if a biography is succesfully set
+
+*/
+function setBio(words)
+{
+  var bio = words;
+  if(typeof bio !== 'string')
+  {
+    return "not a valid bio";
+  }
+  if(bio.length > 10)
+  {
+    return "too many characters";
+  }
+  return 2;
+}
+
+function emailValidity(email)
+{
+
+}
+
+module.exports = {setBio: setBio, 
+  setPic: setPic, emailValidity: emailValidity};
