@@ -47,7 +47,16 @@ function setBio(words)
 
 function emailValidity(email)
 {
-
+  var em = email;
+  if(typeof em !== 'string')
+  {
+    return "not a valid email";
+  }
+  if(!em.includes("@"))
+  {
+    return "not a valid email";
+  }
+  return 2;
 }
 
 module.exports = {setBio: setBio, 

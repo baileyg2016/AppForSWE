@@ -28,3 +28,24 @@ test('setBio test for valid bio', () => {
     expect(feed.setBio("nice")).toEqual(2);
 
 });
+
+//tests for invalid email
+test('emailValidity test for an invalid email type', () => {
+    
+    expect(feed.emailValidity(6)).toEqual("not a valid email");
+
+});
+
+//tests for invalid email
+test('emailValidity test for an invalid email', () => {
+    
+    expect(feed.emailValidity("koyoldcvt.edu")).toEqual("not a valid email");
+
+});
+
+//tests for valid email
+test('emailValidity test for an valid email', () => {
+    
+    expect(feed.emailValidity("koyoldc@vt.edu")).toEqual(2);
+
+});
