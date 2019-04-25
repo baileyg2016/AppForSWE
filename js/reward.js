@@ -4,10 +4,18 @@
     to create formal classes from our class diagram. 
 */
 
-
-
-document.getElementById("rewards").addEventListener("click", claimReward);
-
-function claimReward() {
-    window.open("./rewardsPopup.html");
+if (process.env.NODE_ENV !== 'test') {
+    document.getElementById("rewards").addEventListener("click", claimReward);
 }
+
+function claimRewards() {
+    if (window.open("./rewardsPopup.html") != null) {
+        console.log(true)
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+module.exports = claimRewards;
