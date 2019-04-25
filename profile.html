@@ -29,7 +29,7 @@
                 </div>
               </nav>
         </div>
-    <body>
+    <body onload="checkEdits()">
         <div class="wrapper">
             <div class="card">
             <div class="card__header"></div>
@@ -38,8 +38,10 @@
             </div>
             <div class="card__info">
                 <div class="details">
-                    <span class="details__text-header">Bailey Spell</span>
-                    <span class="details__text-subheader" id="info">Apsiring Software Engineer who wants to make the planet greener #GoGreen</span>
+                <span class="details__text-header">Bailey Spell</span>
+                <div id="edit">
+                  <span class="details__text-subheader" id="info">Apsiring Software Engineer who wants to make the planet greener #GoGreen</span>
+                </div>
                 </div>
                 <div class="card__info__section-3">
                     <div class="details-bottom">
@@ -196,6 +198,7 @@
                             </div>
 
         <script  src="js/reward.js"></script>
+        <script  src="js/index.js"></script>
     </body>
 
 </html>
