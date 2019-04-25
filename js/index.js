@@ -3,7 +3,9 @@
     convey the idea of the app. Javascript classes are functions, so it was difficult for us
     to create formal classes from our class diagram. 
 */
-
+$('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
 
 document.getElementById("login").addEventListener("click", test);
 document.getElementById("create").addEventListener("click", test);
