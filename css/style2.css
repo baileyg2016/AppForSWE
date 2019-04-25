@@ -8,7 +8,6 @@
     margin: 50px;
     width: 475px;
     height: 150px;
-    
     font-family: helvetica;
     
     /*FLEXXX*/
@@ -17,6 +16,10 @@
     /* justify-content: center; */
     flex-direction: col;
   }
+
+.padder {
+  padding-left: 450px;
+}
   
   /*LEFT COLUMN OF THE TWEET*/
   .left {
