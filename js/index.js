@@ -30,18 +30,20 @@ function setPic(pic)
   document.getElementById("profilePic").innerHTML = "";
   return 2;
 }
+module.exports = setPic;
 
 
 function setCaption(cap)
 {
     var caption = cap;
     document.getElementById("caption").innerHTML = "Caption saved!";
-    if(cap != null)
+    if(cap == null)
     {
         return 2;
     }
     return 3;
 }
+module.exports = setCaption;
 
 
 

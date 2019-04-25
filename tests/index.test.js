@@ -4,7 +4,7 @@ const index = require('../js/index.js')
 
 it('feed test', () => {
     
-    expect(feed.like(post)).toEqual(!null);
+    expect(feed.like("")).toEqual(!null);
 })
 
 it('setpic test', () => {
