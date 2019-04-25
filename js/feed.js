@@ -8,6 +8,7 @@
 
 function like(x) {
   x.classList.toggle("fa-thumbs-down");
+  return 5;
 }
 
 exports.like = like;
