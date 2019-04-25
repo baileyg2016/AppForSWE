@@ -38,6 +38,10 @@ function setCaption(cap)
 {
     var caption = cap;
     document.getElementById("caption").innerHTML = "Caption saved!";
+    if(cap != null)
+    {
+        return 2;
+    }
     return 3;
 }
 
