@@ -26,5 +26,4 @@ function setPic(pic)
 {
   image = pic;
   return 2;
-
 }
