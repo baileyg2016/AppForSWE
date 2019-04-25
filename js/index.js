@@ -9,7 +9,7 @@ document.getElementById("login").addEventListener("click", test);
 document.getElementById("create").addEventListener("click", test);
 
 function test(form) {
-    window.open("file:///Users/BaileySpell/Documents/OneDrive%20-%20Virginia%20Tech/Spring2019/software%20engineering/FinalCode/feedLogin.html");
+    window.open("./feedLogin.html");
     // alert("getting the click");
 }
 
