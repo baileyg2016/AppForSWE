@@ -1,3 +1,9 @@
+Instructions on running tests:
+
+	1. First install npm if you do not already have it. 
+	2. Then install the testing software run on your terminal: npm install --save-dev jest
+	3. To run the test suite then run: npm test
+		That should be in the directory for the code
 
 
 
