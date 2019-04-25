@@ -15,7 +15,12 @@ function test(form) {
 
 function like(x) {
     x.classList.toggle("fa-thumbs-down");
-  }
+}
 
 
-document.getElementById("info").innerHTML = "";
+document.getElementById("solo").addEventListener("click", goToProfile);
+
+function goToProfile() {
+    alert("Getting the click");
+    window.open("file:///Users/BaileySpell/Documents/OneDrive%20-%20Virginia%20Tech/Spring2019/software%20engineering/FinalCode/soloProfile.html");
+}
