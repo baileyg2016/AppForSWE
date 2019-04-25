@@ -12,3 +12,12 @@ function like(x) {
 }
 
 exports.like = like;
+
+
+function setPic(pic)
+{
+  var image = pic;
+  // document.getElementById("profilePic").innerHTML = "";
+  return 2;
+}
+module.exports = {setPic: setPic};
