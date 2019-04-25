@@ -22,12 +22,12 @@
                         </ul>
                         </div>
                         <ul class="nav navbar-right navbar-nav">
-                            <li class="active"><a href="editProfile.html">Edit Profile</a></li>        
+                            <li class="active"><a href="editProfile.html"><input type="button" value="Save my edits" onclick="saveEdits()"/></a></li>        
                         </ul>
                 </div>
               </nav>
         </div>
-    <body>
+    <body onload="checkEdits()">
 
             <div class="wrapper">
                     <div class="card">
@@ -38,7 +38,11 @@
                     <div class="card__info">
                         <div class="details">
                         <span class="details__text-header">Bailey Spell</span>
-                        <span class="details__text-subheader" id="info"></span>
+                        <div id="edit" contenteditable="true" onkeyup="saveEdits()">
+                            <span class="details__text-subheader" id="info">
+                                Apsiring Software Engineer who wants to make the planet greener #GoGreen
+                            </span>
+                        </div>
                         </div>
                         <div class="card__info__section-3">
                         <div class="details-bottom">
