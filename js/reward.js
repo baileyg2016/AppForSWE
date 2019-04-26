@@ -4,9 +4,9 @@
     to create formal classes from our class diagram. 
 */
 
-if (process.env.JEST_WORKER_ID === undefined) {
-    document.getElementById("rewards").addEventListener("click", claimReward);
-}
+// if (process.env.JEST_WORKER_ID === undefined) {
+    // document.getElementById("rewards").addEventListener("click", claimReward);
+// }
 
 function claimRewards() {
     if (window.open("./rewardsPopup.html") != null) {

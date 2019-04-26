@@ -5,18 +5,18 @@
 */
 
 
-    $('.message a').click(function(){
+$('.message a').click(function(){
     $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-    });
+});
 
 
-    document.getElementById("login").addEventListener("click", login);
-    document.getElementById("create").addEventListener("click", create);
+//     document.getElementById("login").addEventListener("click", login);
+//     document.getElementById("create").addEventListener("click", create);
 
-function test(form) {
-    window.open("./feedLogin.html");
-    // alert("getting the click");
-}
+// function test(form) {
+//     window.open("./feedLogin.html");
+//     // alert("getting the click");
+// }
 
 
 
@@ -24,67 +24,67 @@ function like(x) {
     x.classList.toggle("fa-thumbs-down");
 }
 
-//if (process.env.JEST_WORKER_ID === undefined) {
-    document.getElementById("info").innerHTML = "";
-//}
+// //if (process.env.JEST_WORKER_ID === undefined) {
+//     // document.getElementById("info").innerHTML = "";
+// //}
 
-//sets the image
+// //sets the image
 
-function setPic(pic)
-{
-  var image = pic;
-  document.getElementById("profilePic").innerHTML = "";
-  return 2;
-}
-module.exports = setPic;
-
-
-function setCaption(cap)
-{
-    var caption = cap;
-    document.getElementById("caption").innerHTML = "Caption saved!";
-    if(cap == null)
-    {
-        return 2;
-    }
-    return 3;
-}
-module.exports = setCaption;
+// function setPic(pic)
+// {
+//   var image = pic;
+//   document.getElementById("profilePic").innerHTML = "";
+//   return 2;
+// }
+// module.exports = setPic;
 
 
+// function setCaption(cap)
+// {
+//     var caption = cap;
+//     document.getElementById("caption").innerHTML = "Caption saved!";
+//     if(cap == null)
+//     {
+//         return 2;
+//     }
+//     return 3;
+// }
+// module.exports = setCaption;
 
 
-function saveEdits() {
 
-    //get the editable element
-    var editElem = document.getElementById("edit");
 
-    //get the edited element content
-    var userVersion = editElem.innerHTML;
+// function saveEdits() {
 
-    //save the content to local storage
-    localStorage.userEdits = userVersion;
+//     //get the editable element
+//     var editElem = document.getElementById("edit");
 
-    //write a confirmation to the user
-    document.getElementById("update").innerHTML="Edits saved!";
+//     //get the edited element content
+//     var userVersion = editElem.innerHTML;
 
-    }
+//     //save the content to local storage
+//     localStorage.userEdits = userVersion;
 
-    function checkEdits() {
+//     //write a confirmation to the user
+//     document.getElementById("update").innerHTML="Edits saved!";
 
-      //find out if the user has previously saved edits
-      if(localStorage.userEdits!=null)
-      document.getElementById("edit").innerHTML = localStorage.userEdits;
-      }
-      if (process.env.JEST_WORKER_ID === undefined) {
-        document.getElementById("solo").addEventListener("click", goToProfile);
-      }
+//     }
 
-function goToProfile() {
-    alert("Getting the click");
-    window.open("./soloProfile.html");
+    // function checkEdits() {
 
-}
+    //   //find out if the user has previously saved edits
+    //   if(localStorage.userEdits!=null)
+    //   document.getElementById("edit").innerHTML = localStorage.userEdits;
+    //   }
+    // //   if (process.env.JEST_WORKER_ID === undefined) {
+    //     document.getElementById("solo").addEventListener("click", goToProfile);
+    // //   }
+
+// function goToProfile() {
+//     alert("Getting the click");
+//     window.open("./soloProfile.html");
+
+// }
 
 
 var el1 = document.getElementById("login");
@@ -106,7 +106,7 @@ function login(form) {
          document.getElementById('alert').innerHTML = 'Enter a valid Username and Password';
       }      
       else {
-         window.open("file:/Users/Adam/Documents/GitHub/AppForSWE/feedLogin.html");
+         window.open("./feedLogin.html");
       }
 }
 
@@ -133,7 +133,7 @@ function create(form) {
 
    var password;
    if (document.getElementById('passwordC')) {
-      passowrd = document.getElementById('passwordC').value;
+      password = document.getElementById('passwordC').value;
       validPassword = validatePassword(password);
    }
       
@@ -145,7 +145,7 @@ function create(form) {
    else {
       createUser(firstName, lastName, displayName, password, email, userCount);
       printUsers();
-      window.open("file:/Users/Adam/Documents/GitHub/AppForSWE/feedLogin.html");
+      window.open("./feedLogin.html");
      
    }
 }
