@@ -4,7 +4,7 @@
     to create formal classes from our class diagram. 
 */
 
-if (process.env.NODE_ENV !== 'test') {
+if (process.env.JEST_WORKER_ID === undefined) {
     document.getElementById("rewards").addEventListener("click", claimReward);
 }
 

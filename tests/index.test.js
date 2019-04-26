@@ -1,5 +1,6 @@
 
 const feed = require('../js/feed.js')
+
 //const index = require('../js/index.js')
 
 it('feed test', () => {
@@ -14,10 +15,8 @@ test('setpic test with a valid pic', () => {
     //expect(feed.setPic("https://vignette.wikia.nocookie.net/p__/images/f/f5/EdEEnE.png/revision/latest?cb=20130924162121&path-prefix=protagonist")).toEqual(2);
 
 });
+const index = require('../js/testingHelper.js');
 
-//const index = require('./js/index.js');
-//import * as index from './js/index.js';
-const index = require('../js/index.js');
 //import userCount from './js/index.js';
 it('User Count Test 0', () => {
     //Testing basic Method functionality 
@@ -102,7 +101,7 @@ it('Validate Email 2', () => {
     index.reset();
     var email = "adamt@vt.edu";
     index.createUser("a", "b", "c", "d", email);
-    console.log(index.getUsers[0]);
+    //console.log(index.getUsers[0]);
     expect(index.validateEmail(email)).toBeFalsy();
 })
 

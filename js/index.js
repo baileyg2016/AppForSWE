@@ -3,15 +3,16 @@
     convey the idea of the app. Javascript classes are functions, so it was difficult for us
     to create formal classes from our class diagram.
 */
-if (process.env.NODE_ENV !== 'test') {
+
+
     $('.message a').click(function(){
     $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
     });
-}
-if (process.env.NODE_ENV !== 'test') {
-    document.getElementById("login").addEventListener("click", test);
-    document.getElementById("create").addEventListener("click", test);
-}
+
+
+    document.getElementById("login").addEventListener("click", login);
+    document.getElementById("create").addEventListener("click", create);
+
 function test(form) {
     window.open("./feedLogin.html");
     // alert("getting the click");
@@ -23,9 +24,9 @@ function like(x) {
     x.classList.toggle("fa-thumbs-down");
 }
 
-if (process.env.NODE_ENV !== 'test') {
+//if (process.env.JEST_WORKER_ID === undefined) {
     document.getElementById("info").innerHTML = "";
-}
+//}
 
 //sets the image
 
@@ -75,7 +76,7 @@ function saveEdits() {
       if(localStorage.userEdits!=null)
       document.getElementById("edit").innerHTML = localStorage.userEdits;
       }
-      if (process.env.NODE_ENV !== 'test') {
+      if (process.env.JEST_WORKER_ID === undefined) {
         document.getElementById("solo").addEventListener("click", goToProfile);
       }
 
@@ -163,6 +164,10 @@ function setCount(x) {
 
 function reset() {
    setCount(0);    
+}
+
+function testingToggle() {
+   return !testing;
 }
 
 function printUsers() {
